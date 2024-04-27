@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+    input{
+        padding-left: 20px;
+        width: 200px;
+        height: 25px;
+        font-size: larger;
+        outline: none;
+        color: rgb(226, 113, 43);
+        
+    }
+   fieldset{
+    background-color: aliceblue;
+
+   }
+   #dice{
+    color:aqua;
+   }
+  legend > h1{
+    color: blue;
+  }
+  button{
+    background-color: lime;
+    border-radius: 5px;
+    width: 80px;
+    height: 20px;
+  }
+        </style>
+</head>
+<body>
+ <fieldset  >
+    <legend><h1>Check Your Luck</h1></legend>
+    <input type="text"  id="dice_input" placeholder="Try your luck">
+    <h1 id="dice">Dice</h1>
+    <h1 id="won"></h1>
+    <button onclick="lucktry()">Check</button>
+ </fieldset>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
