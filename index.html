@@ -1,48 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
-    <style>
-    input{
-        padding-left: 20px;
-        width: 200px;
-        height: 25px;
-        font-size: larger;
-        outline: none;
-        color: rgb(226, 113, 43);
-        
-    }
-   fieldset{
-    background-color: aliceblue;
-
-   }
-   #dice{
-    color:aqua;
-   }
-  legend > h1{
-    color: blue;
-  }
-  button{
-    background-color: lime;
-    border-radius: 5px;
-    width: 80px;
-    height: 20px;
-  }
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
- <fieldset  >
-    <legend><h1>Check Your Luck</h1></legend>
-    <input type="text"  id="dice_input" placeholder="Try your luck">
-    <h1 id="dice">Dice</h1>
-    <h1 id="won"></h1>
-    <button onclick="lucktry()">Check</button>
- </fieldset>
+  
+  <h1 id="dice_heading">Dice Game</h1>
+  <h2 id="massageshow"></h2>
+  <div id="mainbox">
+    <div id="box"  onclick="tryMyluck(1)"><h1>1</h1></div>
+    <div id="box1" onclick="tryMyluck(2)"><h1>2</h1></div>
+    <div id="box2" onclick="tryMyluck(3)"><h1>3</h1></div>
+    <div id="box3" onclick="tryMyluck(4)"><h1>4</h1></div>
+    <div id="box4" onclick="tryMyluck(5)"><h1>5</h1></div>
+    <div id="box5" onclick="tryMyluck(6)"><h1>6</h1></div>
+  </div>
+  <div id="mainbox">
+    <div class="info_box"> <b>User Number :</b> <span id="user_number">10</span>  </div>
+  <div class="info_box"> <b>Random Number :</b> <span id="random_number">3</span> </div>
+    <div id="info_box_result" class="info_box"> <b id="result">You Loss / Win</b></div>
+</div> 
+  
 
-    
-    <script src="app.js"></script>
+
+  <div id="mainbox">
+    <div class="info_box"> <b>Turns :</b> <span id="total">10</span> </div>
+    <div class="info_box"> <b>Win :</b><span id="win">0</span>   </div>
+    <div class="info_box"> <b>Loss :</b> <span id="loss">0</span>  </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
